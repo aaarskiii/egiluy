@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SiAbsen Premium</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(15,23,42,0.9);
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#60a5fa;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#60a5fa;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:120px 20px;
+background:
+linear-gradient(rgba(15,23,42,0.8),rgba(15,23,42,0.9)),
+url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#60a5fa;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+color:#d1d5db;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:16px 40px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+background:#3b82f6;
+}
+
+.section{
+padding:100px 8%;
+}
+
+.title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.title h2{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.title p{
+color:#cbd5e1;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:35px;
+border-radius:25px;
+transition:0.4s;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin:20px 0 10px;
+font-size:24px;
+color:#60a5fa;
+}
+
+.card p{
+color:#cbd5e1;
+line-height:1.7;
+}
+
+.icon{
+font-size:45px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.stat-box{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+padding:35px;
+border-radius:25px;
+text-align:center;
+}
+
+.stat-box h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.table-box{
+margin-top:40px;
+background:#1e293b;
+padding:30px;
+border-radius:25px;
+overflow-x:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+table th{
+background:#2563eb;
+padding:18px;
+}
+
+table td{
+padding:18px;
+text-align:center;
+border-bottom:1px solid #334155;
+}
+
+.hadir{
+color:#4ade80;
+font-weight:600;
+}
+
+.izin{
+color:#facc15;
+font-weight:600;
+}
+
+.sakit{
+color:#fb7185;
+font-weight:600;
+}
+
+.contact{
+text-align:center;
+background:#1e293b;
+padding:60px;
+border-radius:30px;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.contact p{
+color:#cbd5e1;
+margin-bottom:25px;
+}
+
+footer{
+background:#020617;
+padding:30px;
+text-align:center;
+color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+nav{
+display:none;
+}
+
+.section{
+padding:80px 5%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">SiAbsen</div>
+
+<nav>
+<a href="#">Beranda</a>
+<a href="#">Siswa</a>
+<a href="#">Guru</a>
+<a href="#">Absensi</a>
+<a href="#">Kontak</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Website <span>Absensi Sekolah</span><br>Modern & Profesional</h1>
+
+<p>
+SiAbsen adalah platform absensi sekolah digital modern
+untuk mengelola data siswa, guru, dan kehadiran secara cepat,
+mudah, dan efisien.
+</p>
+
+<a href="#" class="btn">Masuk Dashboard</a>
+</div>
+</section>
+
+<section class="section">
+
+<div class="title">
+<h2>Fitur Unggulan</h2>
+<p>Website sekolah modern dengan tampilan premium.</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">📚</div>
+<h3>Data Siswa</h3>
+<p>Mengelola data siswa dengan tampilan modern dan rapi.</p>
+</div>
+
+<div class="card">
+<div class="icon">📝</div>
+<h3>Absensi Online</h3>
+<p>Input kehadiran siswa secara realtime dan efisien.</p>
+</div>
+
+<div class="card">
+<div class="icon">👨‍🏫</div>
+<h3>Data Guru</h3>
+<p>Mengelola data guru dan wali kelas sekolah.</p>
+</div>
+
+<div class="card">
+<div class="icon">📊</div>
+<h3>Rekap Data</h3>
+<p>Laporan absensi otomatis dengan tampilan profesional.</p>
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="stat-box">
+<h1>1.250+</h1>
+<p>Total Siswa</p>
+</div>
+
+<div class="stat-box">
+<h1>75+</h1>
+<p>Total Guru</p>
+</div>
+
+<div class="stat-box">
+<h1>98%</h1>
+<p>Kehadiran</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="title">
+<h2>Absensi Hari Ini</h2>
+<p>Data absensi siswa terbaru.</p>
+</div>
+
+<div class="table-box">
+
+<table>
+<tr>
+<th>No</th>
+<th>Nama</th>
+<th>Kelas</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Andi Saputra</td>
+<td>XII RPL 1</td>
+<td class="hadir">Hadir</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Siti Nurhaliza</td>
+<td>XII TKJ 1</td>
+<td class="izin">Izin</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Budi Santoso</td>
+<td>XII RPL 2</td>
+<td class="sakit">Sakit</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Rina Amelia</td>
+<td>XII RPL 3</td>
+<td class="hadir">Hadir</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="contact">
+<h2>SiAbsen Premium</h2>
+<p>
+Website absensi sekolah modern dengan desain profesional,
+responsive, dan siap dipakai untuk tugas sekolah maupun portfolio.
+</p>
+
+<a href="#" class="btn">Hubungi Admin</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 SiAbsen Premium — All Rights Reserved
+</footer>
+
+</body>
+</html>
+```
+
+Cara menjalankan:
+
+1. Buka VS Code
+2. Buat file `index.html`
+3. Paste semua kode
+4. Save
+5. Klik kanan → Open with Live Server
